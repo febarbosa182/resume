@@ -9,8 +9,8 @@
     mat-toolbar {
       button {
         &.active {
-          color: mat-color($accent, default-contrast);
-          background-color: mat-color($accent);
+          color: mat-color($primary, default-contrast);
+          background-color: mat-color($primary, darker);
         }
       }
 
@@ -34,7 +34,7 @@
 
     .footer {
       color: mat-color($primary, lighter);
-      background-color: mat-color($primary, darker);
+      background-color: mat-color($primary);
 
       .links,
       .signature {
