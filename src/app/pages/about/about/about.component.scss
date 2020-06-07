@@ -1,0 +1,46 @@
+@import "../../../../styles-variables";
+
+h1 {
+  text-align: left;
+  font-size: 2em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+}
+
+h2 {
+  text-align: left;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  position: relative;
+  margin-top: 20px;
+
+  .banner {
+    margin: 0 auto;
+    width: fit-content !important;
+    height: 40px;
+  }
+
+  .basic-info {
+    margin-top: 20px;
+
+    span {
+      margin-left: 5px;
+      width: 100%;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+    width: 150px;
+    border: 3px solid;
+  }
+
+  .idioms {
+    margin-left: 3px;
+  }
+}

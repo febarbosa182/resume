@@ -1,0 +1,38 @@
+@import "../../../../styles-variables";
+
+h1 {
+  text-align: left;
+  font-size: 2em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  margin-top: 10px;
+
+  iframe {
+    border-radius: 10px;
+    width: 180px;
+    height: 270px;
+  }
+}
+
+mat-card {
+  margin: 0 0 20px 0;
+
+  .card-header-image {
+    background-size: cover;
+  }
+
+  fa-icon {
+    font-size: 25px;
+    width: 35px;
+  }
+
+  @media (max-width: map-get($grid-breakpoints, sm)) {
+    mat-card-content {
+      min-height: auto;
+    }
+  }
+}

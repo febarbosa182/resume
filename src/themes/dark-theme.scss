@@ -1,0 +1,9 @@
+$fbr-dark-primary: mat-palette($mat-pink, 500, 300, 900);
+$fbr-dark-accent: mat-palette($mat-green, A400);
+$fbr-dark-warn: mat-palette($mat-red, 500);
+
+$fbr-dark-theme: mat-dark-theme(
+  $fbr-dark-primary,
+  $fbr-dark-accent,
+  $fbr-dark-warn
+);

@@ -1,0 +1,43 @@
+@import "~@angular/material/theming";
+
+@mixin fbr-about-component-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  fbr-about {
+    .background {
+      color: mat-color($foreground, text);
+      background-color: mat-color($background, background);
+
+      .gradient {
+        &::before {
+          background: linear-gradient(
+            to bottom,
+            mat-color($background, background, 0) 0%,
+            mat-color($background, background, 1) 100%
+          );
+        }
+      }
+    }
+
+    .banner {
+      border-right: 0.4em solid;
+      border-color: mat-color($foreground, text, 1);
+      background-color: mat-color($background, background);
+      animation: blink-caret 0.75s step-end infinite;
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      50% {
+        border-color: mat-color($foreground, text, 0);
+      }
+    }
+
+    img {
+      border-color: mat-color($background, background) !important;
+    }
+  }
+}

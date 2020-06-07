@@ -1,0 +1,25 @@
+{
+  "fbr.about.title": "Sobre Mim",
+  "fbr.about.academic": "Formação Acadêmica",
+  "fbr.about.idioms": "Idiomas",
+  "fbr.about.birth.month": "Julho",
+  "fbr.about.high-school": "Colegial: ETEC Albert Einstein – graduado em 2009.",
+  "fbr.about.college": "Ensino superior: Sistemas de Informação – Universidade Mackenzie – graduado em 2015.",
+  "fbr.about.description": "Tenho cerca de 9 anos de experiênciaem TI. Até agora adiquiri conhecimento em muitas tecnologias tais commo:: Java, NodeJS, Angular, Python, GoLang, Docker, Kubernetes e nos ultimos 5 anos trabalhando com DevOps.",
+  "fbr.about.language.english": "Inglês - Avançado",
+  "fbr.about.language.portuguese": "Português - Nativo",
+
+  "fbr.resume.experiences": "Experiências",
+  "fbr.resume.certifications": "Certificados",
+  "fbr.resume.skills": "Habilidades",
+  "fbr.resume.role.software-engineer-senior": "Engenheiro de Software Senior",
+  "fbr.resume.role.software-engineer": "Engenheiro de Software",
+  "fbr.resume.role.specialist": "Especialista",
+
+  "fbr.menu.about": "Sobre",
+  "fbr.menu.resume": "Currículo",
+  "fbr.menu.projects": "Projetos",
+
+  "fbr.title.long": "Felipe Augusto Fonseca Barbosa",
+  "fbr.title.short": "Felipe Augusto"
+}

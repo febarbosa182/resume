@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 banner-wrapper">
+      <h1 class="banner">{{ interest | async }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>{{ "fbr.about.title" | translate }}</h1>
+    </div>
+  </div>
+  <div class="row" [ngClass]="routeAnimationsElements">
+    <div class="col-md-3">
+      <img
+        [src]="logo"
+        fbrMaterialElevation
+        [defaultElevation]="defaultElevation"
+        [raisedElevation]="defaultElevation"
+      />
+    </div>
+    <div class="col-md-9 basic-info">
+      <p>
+        <fa-icon icon="user-circle"></fa-icon
+        ><span>Felipe Augusto Fonseca Barbosa</span><br />
+        <fa-icon icon="calendar-day"></fa-icon
+        ><span>12 {{ "fbr.about.birth.month" | translate }} 1992</span><br />
+        <fa-icon icon="envelope"></fa-icon><span>lybrbarbosa@gmail.com</span
+        ><br />
+        <fa-icon icon="map-marker-alt"></fa-icon><span>São Paulo, SP</span>
+      </p>
+    </div>
+  </div>
+  <div class="row" [ngClass]="routeAnimationsElements">
+    <div class="col-md-12">
+      {{ "fbr.about.description" | translate }}
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>{{ "fbr.about.academic" | translate }}</h2>
+    </div>
+  </div>
+  <div class="col-md-12" [ngClass]="routeAnimationsElements">
+    <p>{{ "fbr.about.high-school" | translate }}</p>
+    <p>{{ "fbr.about.college" | translate }}</p>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>{{ "fbr.about.idioms" | translate }}</h2>
+    </div>
+  </div>
+  <div class="row idioms" [ngClass]="routeAnimationsElements">
+    <div class="col-md-4">
+      {{ "fbr.about.language.english" | translate }}
+    </div>
+    <div class="col-md-4">
+      {{ "fbr.about.language.portuguese" | translate }}
+    </div>
+  </div>
+  <br />
+</div>

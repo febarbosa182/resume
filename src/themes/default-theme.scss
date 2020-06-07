@@ -1,0 +1,5 @@
+$fbr-primary: mat-palette($mat-deep-purple, 800, 300, 900);
+$fbr-accent: mat-palette($mat-indigo);
+$fbr-warn: mat-palette($mat-pink, 600);
+
+$fbr-theme: mat-light-theme($fbr-primary, $fbr-accent, $fbr-warn);
