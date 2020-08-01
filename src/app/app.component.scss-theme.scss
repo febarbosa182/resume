@@ -11,6 +11,7 @@
         &.active {
           color: mat-color($primary, default-contrast);
           background-color: mat-color($primary, darker);
+          @include mat-elevation(2);
         }
       }
 

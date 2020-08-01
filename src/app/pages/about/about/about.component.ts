@@ -7,13 +7,13 @@ import {
   repeat,
   delay,
   concatMap,
-  ignoreElements
+  ignoreElements,
 } from "rxjs/operators";
 const interests = ["DevOps", "Cloud", "Innovation"];
 
 const type = ({ word, speed, backwards = false }) =>
   interval(speed).pipe(
-    map(x =>
+    map((x) =>
       backwards
         ? String(word).substr(0, word.length - x - 1)
         : String(word).substr(0, x + 1)
@@ -21,7 +21,7 @@ const type = ({ word, speed, backwards = false }) =>
     take(word.length)
   );
 
-const typeEffect = word =>
+const typeEffect = (word) =>
   concat(
     type({ word, speed: 50 }),
     of("").pipe(delay(1200), ignoreElements()), // pause
@@ -33,11 +33,10 @@ const typeEffect = word =>
   selector: "fbr-about",
   templateUrl: "./about.component.html",
   styleUrls: ["./about.component.scss"],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutComponent implements OnInit {
   routeAnimationsElements = ROUTE_ANIMATIONS_ELEMENTS;
-  logo = require("../../../../assets/logo.png");
   interest: Observable<string> = from(interests).pipe(
     concatMap(typeEffect),
     repeat()

@@ -10,19 +10,19 @@ import {
   LocalStorageService,
   selectSettingsStickyHeader,
   selectSettingsLanguage,
-  selectEffectiveTheme
+  selectEffectiveTheme,
 } from "./core/core.module";
 import {
   actionSettingsChangeAnimationsPageDisabled,
   actionSettingsChangeLanguage,
-  actionSettingsChangeTheme
+  actionSettingsChangeTheme,
 } from "./core/settings/settings.actions";
 
 @Component({
   selector: "fbr-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
-  animations: [routeAnimations]
+  animations: [routeAnimations],
 })
 export class AppComponent implements OnInit {
   isProd = env.production;
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
   navigation = [
     { link: "about", label: "fbr.menu.about" },
     { link: "resume", label: "fbr.menu.resume" },
-    { link: "projects", label: "fbr.menu.projects" }
+    // { link: "projects", label: "fbr.menu.projects" }
   ];
   navigationSideMenu = [...this.navigation];
 
@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
     if (AppComponent.isIEorEdgeOrSafari()) {
       this.store.dispatch(
         actionSettingsChangeAnimationsPageDisabled({
-          pageAnimationsDisabled: true
+          pageAnimationsDisabled: true,
         })
       );
     }
