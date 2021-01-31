@@ -8,7 +8,7 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     company: "Easynvest",
-    period: "2020-",
+    period: "2020-2021",
     role: "fbr.resume.role.specialist",
     description:
       "Kubernetes cluster management, CI/CD, SRE. Development of cloud native applications , distrubuted and dynamic pipelines with Jenkins. Integration of several tools to improve the SDLC, structuring and refactoring old systems, microservices and cloud. Implementation of new Tools and Archtectures",
