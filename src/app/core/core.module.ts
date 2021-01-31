@@ -3,11 +3,11 @@ import { NgModule, Optional, SkipSelf, ErrorHandler } from "@angular/core";
 import {
   HttpClientModule,
   HttpClient,
-  HTTP_INTERCEPTORS
+  HTTP_INTERCEPTORS,
 } from "@angular/common/http";
 import {
   StoreRouterConnectingModule,
-  RouterStateSerializer
+  RouterStateSerializer,
 } from "@ngrx/router-store";
 import { StoreModule } from "@ngrx/store";
 import { EffectsModule } from "@ngrx/effects";
@@ -16,7 +16,7 @@ import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import {
   FaIconLibrary,
-  FontAwesomeModule
+  FontAwesomeModule,
 } from "@fortawesome/angular-fontawesome";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
@@ -35,12 +35,12 @@ import {
   AppState,
   reducers,
   metaReducers,
-  selectRouterState
+  selectRouterState,
 } from "./core.state";
 import { TitleService } from "./title/title.service";
 import {
   ROUTE_ANIMATIONS_ELEMENTS,
-  routeAnimations
+  routeAnimations,
 } from "./animations/route.animations";
 import { AnimationsService } from "./animations/animations.service";
 import { AppErrorHandler } from "./error-handler/app-error-handler.service";
@@ -53,14 +53,15 @@ import { SettingsEffects } from "./settings/settings.effects";
 import {
   selectSettingsLanguage,
   selectEffectiveTheme,
-  selectSettingsStickyHeader
+  selectSettingsStickyHeader,
 } from "./settings/settings.selectors";
 import { MatButtonModule } from "@angular/material/button";
 import {
   faBars,
   faUserCircle,
   faAdjust,
-  faTimes
+  faTimes,
+  faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -74,7 +75,7 @@ import {
   faAngular,
   faGoogle,
   faDocker,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 export {
@@ -88,7 +89,7 @@ export {
   NotificationService,
   selectEffectiveTheme,
   selectSettingsLanguage,
-  selectSettingsStickyHeader
+  selectSettingsStickyHeader,
 };
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -121,7 +122,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     environment.production
       ? []
       : StoreDevtoolsModule.instrument({
-          name: "Resume"
+          name: "Resume",
         }),
 
     // 3rd party
@@ -130,15 +131,15 @@ export function HttpLoaderFactory(http: HttpClient) {
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    })
+        deps: [HttpClient],
+      },
+    }),
   ],
   declarations: [],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: HttpErrorInterceptor, multi: true },
     { provide: ErrorHandler, useClass: AppErrorHandler },
-    { provide: RouterStateSerializer, useClass: CustomSerializer }
+    { provide: RouterStateSerializer, useClass: CustomSerializer },
   ],
   exports: [
     // angular
@@ -158,8 +159,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 
     // 3rd party
     FontAwesomeModule,
-    TranslateModule
-  ]
+    TranslateModule,
+  ],
 })
 export class CoreModule {
   constructor(
@@ -187,7 +188,8 @@ export class CoreModule {
       faDocker,
       faAdjust,
       faLinkedin,
-      faTimes
+      faTimes,
+      faInfoCircle
     );
   }
 }

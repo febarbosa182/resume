@@ -9,7 +9,13 @@ import {
   concatMap,
   ignoreElements,
 } from "rxjs/operators";
-const interests = ["DevOps", "Cloud", "Innovation"];
+const interests = [
+  "DevOps",
+  "SRE",
+  "Cloud Architect",
+  "Software Engineer",
+  "Innovation",
+];
 
 const type = ({ word, speed, backwards = false }) =>
   interval(speed).pipe(
