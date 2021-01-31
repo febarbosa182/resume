@@ -13,11 +13,14 @@
       <mat-card fbrMaterialElevation>
         <mat-card-header>
           <div mat-card-avatar class="card-header-image">
-            <fa-icon [icon]="skill.icon"></fa-icon>
+            <fa-icon [icon]="skill.icon" [class]="skill.css"></fa-icon>
           </div>
           <mat-card-title>
             {{ skill.name | translate }}
           </mat-card-title>
+          <mat-card-subtitle class="d-none d-sm-flex d-md-flex">{{
+            skill.description | translate
+          }}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
           <mat-progress-bar
@@ -25,6 +28,14 @@
             color="accent"
             [value]="skill.level"
           ></mat-progress-bar>
+          <mat-card-actions class="d-flex">
+            <a [href]="skill.github" target="_blank" rel="noopener noreferrer"
+              ><fa-icon [icon]="['fab', 'github']"></fa-icon
+            ></a>
+            <a [href]="skill.info" target="_blank" rel="noopener noreferrer"
+              ><fa-icon icon="info-circle"></fa-icon
+            ></a>
+          </mat-card-actions>
         </mat-card-content>
       </mat-card>
     </div>

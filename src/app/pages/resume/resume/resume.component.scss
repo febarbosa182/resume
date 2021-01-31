@@ -18,6 +18,49 @@ h1 {
   }
 }
 
+.aws-icon {
+  color: #ff9900;
+}
+
+.gcp-icon {
+  color: #4285f4;
+}
+
+.azure-icon {
+  color: #008ad7;
+}
+
+.kubernetes-icon {
+  color: #326ce5;
+}
+
+.terraform-icon {
+  color: #623ce4;
+}
+
+.helm-icon {
+  color: #0f1689;
+}
+
+.ansible-icon {
+}
+
+.docker-icon {
+  color: #0db7ed;
+}
+
+.nodejs-icon {
+  color: #3c873a;
+}
+
+.angular-icon {
+  color: #a6120d;
+}
+
+.java-icon {
+  color: #f89820;
+}
+
 mat-card {
   margin: 0 0 20px 0;
 
@@ -25,9 +68,22 @@ mat-card {
     background-size: cover;
   }
 
-  fa-icon {
+  mat-card-header {
+    fa-icon {
+      font-size: 35px;
+      width: 40px;
+    }
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+      fa-icon {
+        font-size: 25px;
+      }
+    }
+  }
+
+  mat-card-actions fa-icon {
     font-size: 25px;
     width: 35px;
+    margin-left: 10px;
   }
 
   @media (max-width: map-get($grid-breakpoints, sm)) {
