@@ -6,20 +6,20 @@ export interface Experience {
 }
 
 export const experiences: Experience[] = [
-  {
-    company: "Easynvest",
-    period: "2020-2021",
-    role: "fbr.resume.role.specialist",
-    description:
-      "Kubernetes cluster management, CI/CD, SRE. Development of cloud native applications , distrubuted and dynamic pipelines with Jenkins. Integration of several tools to improve the SDLC, structuring and refactoring old systems, microservices and cloud. Implementation of new Tools and Archtectures",
-  },
-  {
-    company: "Natura",
-    period: "2020-2020",
-    role: "fbr.resume.role.specialist",
-    description:
-      "Kubernetes cluster management, CI/CD, SRE nad FinOps. Development of cloud native and event driven applications , GitOps pipelines with ArgoCD. Integration of several tools to improve the SDLC, structuring and refactoring old systems, microservices and cloud. Implementation of new Tools and Archtectures to evolve the environment(On-premise, AWS)",
-  },
+  // {
+  //   company: "Easynvest",
+  //   period: "2020-2021",
+  //   role: "fbr.resume.role.specialist",
+  //   description:
+  //     "Kubernetes cluster management, CI/CD, SRE. Development of cloud native applications , distrubuted and dynamic pipelines with Jenkins. Integration of several tools to improve the SDLC, structuring and refactoring old systems, microservices and cloud. Implementation of new Tools and Archtectures",
+  // },
+  // {
+  //   company: "Natura",
+  //   period: "2020-2020",
+  //   role: "fbr.resume.role.specialist",
+  //   description:
+  //     "Kubernetes cluster management, CI/CD, SRE nad FinOps. Development of cloud native and event driven applications , GitOps pipelines with ArgoCD. Integration of several tools to improve the SDLC, structuring and refactoring old systems, microservices and cloud. Implementation of new Tools and Archtectures to evolve the environment(On-premise, AWS)",
+  // },
   {
     company: "Santander",
     period: "2018-2020",
