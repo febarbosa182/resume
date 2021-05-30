@@ -28,7 +28,6 @@ export class AppComponent implements OnInit {
   isProd = env.production;
   envName = env.envName;
   year = new Date().getFullYear();
-  logo = require("../assets/logo.png");
   languages = ["en", "es", "pt-br"];
   navigation = [
     { link: "about", label: "fbr.menu.about" },
