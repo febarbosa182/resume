@@ -5,7 +5,7 @@
   "fbr.about.birth.month": "Julho",
   "fbr.about.high-school": "Colegial: ETEC Albert Einstein – graduado em 2009.",
   "fbr.about.college": "Ensino superior: Sistemas de Informação – Universidade Mackenzie – graduado em 2015.",
-  "fbr.about.description": "Tenho cerca de 9 anos de experiênciaem TI. Até agora adiquiri conhecimento em muitas tecnologias tais commo:: Java, NodeJS, Angular, Python, GoLang, Docker, Kubernetes e nos ultimos 5 anos trabalhando com DevOps.",
+  "fbr.about.description": "Tenho cerca de 12 anos de experiênciaem TI. Até agora adiquiri conhecimento em muitas tecnologias tais commo:: Java, NodeJS, Angular, Python, GoLang, Docker, Kubernetes e nos ultimos 7 anos trabalhando com DevOps.",
   "fbr.about.language.english": "Inglês - Avançado",
   "fbr.about.language.portuguese": "Português - Nativo",
 
@@ -28,6 +28,7 @@
   "fbr.resume.role.software-engineer-senior": "Engenheiro de Software Senior",
   "fbr.resume.role.software-engineer": "Engenheiro de Software",
   "fbr.resume.role.specialist": "Especialista",
+  "fbr.resume.role.tech-lead": "Lider Técnico",
 
   "fbr.menu.about": "Sobre",
   "fbr.menu.resume": "Currículo",

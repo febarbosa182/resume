@@ -44,6 +44,86 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
+      <h2>{{ "fbr.resume.certifications" | translate }}</h2>
+    </div>
+  </div>
+  <div class="row" [ngClass]="routeAnimationsElements">
+    <div class="col-md-3">
+      <iframe
+        name="acclaim-badge"
+        allowTransparency="true"
+        frameborder="0"
+        id="embedded-badge-ckad"
+        scrolling="no"
+        [src]="
+          'https://www.youracclaim.com/embedded_badge/357851e5-2cc5-4aaf-bb21-95946a51a718'
+            | safeUrl
+        "
+        title="View my verified achievement on Acclaim."
+      ></iframe>
+    </div>
+    <div class="col-md-3">
+      <iframe
+        name="acclaim-badge"
+        allowTransparency="true"
+        frameborder="0"
+        id="embedded-badge-cka"
+        scrolling="no"
+        [src]="
+          'https://www.youracclaim.com/embedded_badge/e67f5932-afb5-45a8-add6-97bfae486c50'
+            | safeUrl
+        "
+        title="View my verified achievement on Acclaim."
+      ></iframe>
+    </div>
+    <div class="col-md-3">
+      <iframe
+        name="acclaim-badge"
+        allowTransparency="true"
+        frameborder="0"
+        id="embedded-badge-cks"
+        scrolling="no"
+        [src]="
+          'https://www.youracclaim.com/embedded_badge/55ba0c0c-d626-4386-a33d-d016a93bdbf9'
+            | safeUrl
+        "
+        title="View my verified achievement on Acclaim."
+      ></iframe>
+    </div>
+    <div class="col-md-3">
+      <iframe
+        name="acclaim-badge"
+        allowTransparency="true"
+        frameborder="0"
+        id="embedded-badge-aws-architect"
+        scrolling="no"
+        [src]="
+          'https://www.youracclaim.com/embedded_badge/83ce85bb-4ac3-4a08-ba20-b757204d736f'
+            | safeUrl
+        "
+        title="View my verified achievement on Acclaim."
+      ></iframe>
+    </div>
+  </div>
+  <div class="row" [ngClass]="routeAnimationsElements">
+    <div class="col-md-3">
+      <iframe
+        name="jenkins-badge"
+        allowTransparency="true"
+        frameborder="0"
+        id="embedded-jenkins"
+        scrolling="no"
+        [src]="
+          'https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/11843468'
+            | safeUrl
+        "
+      ></iframe>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
       <h1>{{ "fbr.resume.experiences" | translate }}</h1>
     </div>
   </div>
@@ -66,57 +146,6 @@
           <p>{{ experience.description }}</p>
         </mat-card-content>
       </mat-card>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h2>{{ "fbr.resume.certifications" | translate }}</h2>
-    </div>
-  </div>
-  <div class="row" [ngClass]="routeAnimationsElements">
-    <div class="col-md-4">
-      <iframe
-        name="acclaim-badge"
-        allowTransparency="true"
-        frameborder="0"
-        id="embedded-badge-ckad"
-        scrolling="no"
-        [src]="
-          'https://www.youracclaim.com/embedded_badge/357851e5-2cc5-4aaf-bb21-95946a51a718'
-            | safeUrl
-        "
-        title="View my verified achievement on Acclaim."
-      ></iframe>
-    </div>
-    <div class="col-md-4">
-      <iframe
-        name="acclaim-badge"
-        allowTransparency="true"
-        frameborder="0"
-        id="embedded-badge-cka"
-        scrolling="no"
-        [src]="
-          'https://www.youracclaim.com/embedded_badge/e67f5932-afb5-45a8-add6-97bfae486c50'
-            | safeUrl
-        "
-        title="View my verified achievement on Acclaim."
-      ></iframe>
-    </div>
-    <div class="col-md-4">
-      <iframe
-        name="acclaim-badge"
-        allowTransparency="true"
-        frameborder="0"
-        id="embedded-badge-aws-architect"
-        scrolling="no"
-        [src]="
-          'https://www.youracclaim.com/embedded_badge/83ce85bb-4ac3-4a08-ba20-b757204d736f'
-            | safeUrl
-        "
-        title="View my verified achievement on Acclaim."
-      ></iframe>
     </div>
   </div>
 </div>

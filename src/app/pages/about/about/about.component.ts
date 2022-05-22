@@ -10,11 +10,11 @@ import {
   ignoreElements,
 } from "rxjs/operators";
 const interests = [
-  "DevOps",
-  "SRE",
   "Cloud Architect",
   "Software Engineer",
   "Innovation",
+  "DevOps",
+  "SRE",
 ];
 
 const type = ({ word, speed, backwards = false }) =>

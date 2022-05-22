@@ -62,6 +62,7 @@ import {
   faAdjust,
   faTimes,
   faInfoCircle,
+  faPlane,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -189,7 +190,8 @@ export class CoreModule {
       faAdjust,
       faLinkedin,
       faTimes,
-      faInfoCircle
+      faInfoCircle,
+      faPlane
     );
   }
 }
